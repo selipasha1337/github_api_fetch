@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Github API</title>
+</head>
+<body>
+<div class="search">
+  <div class="input-box">
+    <input type="text" class="input-box__search" placeholder="Search for a repository..." id="search">
+    <ul class="input-box__list" id="searchList"></ul>
+  </div>
+  <div class="cards" id="cards">
+    <template id="card">
+      <div class="card">
+        <div class="card__info">
+          <div class="card__item">
+            <p class="card__title">Name:</p>
+            <p class="card__text" id="repName"></p>
+          </div>
+          <div class="card__item">
+            <p class="card__title">Owner:</p>
+            <p class="card__text" id="repOwner"></p>
+          </div>
+          <div class="card__item">
+            <p class="card__title">Stars:</p>
+            <p class="card__text" id="repStars"></p>
+          </div>
+        </div>
+        <button type="button" aria-label="Close" class="button" id="closeBtn">
+          <span aria-hidden="true" class="button__close">×</span>
+        </button>
+      </div>
+    </template>
+  </div>
+</div>
+
+<script src="script2.js"></script>
+</body>
+</html>
